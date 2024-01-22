@@ -21,7 +21,7 @@ const APIController = (function() {
     
     const _getGenres = async (token) => {
 
-        const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
+        const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_NL`, {
             method: 'GET',
             headers: { 'Authorization' : 'Bearer ' + token}
         });
@@ -32,7 +32,7 @@ const APIController = (function() {
 
     const _getPlaylistByGenre = async (token, genreId) => {
 
-        const limit = 20;
+        const limit = 10;
         
         const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?limit=${limit}`, {
             method: 'GET',
@@ -45,7 +45,7 @@ const APIController = (function() {
 
     const _getTracks = async (token, tracksEndPoint) => {
 
-        const limit = 20;
+        const limit = 10;
 
         const result = await fetch(`${tracksEndPoint}?limit=${limit}`, {
             method: 'GET',
