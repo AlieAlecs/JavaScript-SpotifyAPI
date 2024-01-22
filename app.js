@@ -21,7 +21,7 @@ const APIController = (function() {
     
     const _getGenres = async (token) => {
 
-        const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_NL`, {
+        const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=en_NL`, {
             method: 'GET',
             headers: { 'Authorization' : 'Bearer ' + token}
         });
