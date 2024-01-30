@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #d0e8d7;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f1eb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #2a5a44;
+    width: 100%;
+}
+
+input, select, button {
+    width: calc(30% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+button {
+    width: calc(30% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2a5a44;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.select-container {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    width: 25%;
+}
+
+.table-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: auto; /* Added overflow property to prevent tables from overflowing */
+    margin-top: 20px;
+}
+
+.table {
+    width: 48%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    border: none;
+    padding: 12px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #2a5a44;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.table-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 4px;
+}
+
+.go-to-track-button {
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #2a5a44;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+}
