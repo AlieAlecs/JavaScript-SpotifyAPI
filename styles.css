@@ -1,3 +1,5 @@
+/* styles.css */
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -5,8 +7,8 @@ body {
 }
 
 .container {
-    max-width: 1400px; /* Adjusted max-width */
-    margin: 20px auto; /* Adjusted margin */
+    max-width: 1400px;
+    margin: 20px auto;
     padding: 20px;
     background-color: #f5f1eb;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,7 +21,7 @@ h1, h2 {
     width: 100%;
 }
 
-input, select, button {
+input, button {
     width: calc(30% - 10px);
     padding: 10px;
     font-size: 16px;
@@ -36,7 +38,7 @@ button {
     color: #fff;
     border: none;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .select-container {
@@ -44,10 +46,6 @@ button {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-}
-
-select {
-    width: 25%;
 }
 
 .table-container {
@@ -91,18 +89,6 @@ img {
     border-radius: 4px;
 }
 
-.go-to-track-button {
-    padding: 8px;
-    font-size: 14px;
-    cursor: pointer;
-    background-color: #2a5a44;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    width: 100%;
-    margin-top: 10px;
-}
-
 .like-button {
     padding: 8px;
     font-size: 14px;
@@ -119,4 +105,16 @@ img {
 .like-button.liked {
     background-color: #ff5050; /* Red color when liked */
     color: #fff;
+}
+
+.go-to-track-button {
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #2a5a44;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
 }

@@ -14,15 +14,8 @@
     <div class="select-container">
       <input type="text" id="search-input" placeholder="Enter your search query here..." onkeyup="handleKeyPress(event)">
       
-      <label for="display-count">Amount of songs shown:</label>
-      <select id="display-count" onchange="updateDisplayCount()">
-        <option value="4">4</option>
-        <option value="8">8</option>
-        <option value="12">12</option>
-        <option value="16">16</option>
-      </select>
-
       <button id="search-button" onclick="searchSpotify()">Search</button>
+      <button id="cycle-recommendations-button" onclick="cycleRecommendations()">Cycle Recommendations</button>
     </div>
 
     <div class="table-container">
