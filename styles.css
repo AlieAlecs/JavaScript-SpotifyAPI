@@ -1,14 +1,12 @@
-/* styles.css */
-
 body {
     font-family: 'Arial', sans-serif;
-    margin: 20px;
+    margin: 0;
     background-color: #d0e8d7;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1400px; /* Adjusted max-width */
+    margin: 20px auto; /* Adjusted margin */
     padding: 20px;
     background-color: #f5f1eb;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -55,7 +53,7 @@ select {
 .table-container {
     display: flex;
     justify-content: space-between;
-    overflow: auto; /* Added overflow property to prevent tables from overflowing */
+    overflow: auto;
     margin-top: 20px;
 }
 
@@ -103,4 +101,22 @@ img {
     border-radius: 4px;
     width: 100%;
     margin-top: 10px;
+}
+
+.like-button {
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #2a5a44;
+    border: 1px solid #2a5a44;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.like-button.liked {
+    background-color: #ff5050; /* Red color when liked */
+    color: #fff;
 }

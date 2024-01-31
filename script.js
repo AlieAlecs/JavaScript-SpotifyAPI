@@ -77,3 +77,6 @@ function handleKeyPress(event) {
 function updateDisplayCount() {
   searchSpotify();
 }
+  function toggleLike(button) {
+    button.classList.toggle('liked');
+}
